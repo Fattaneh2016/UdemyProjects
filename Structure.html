@@ -3,164 +3,199 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Structure Layout </title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width , intial-scale=1"/>
-    <meta  name="description" content="Udemy Projects" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , intial-scale=1" />
+    <meta name="description" content="Udemy Projects" />
     <title>Structure of the web page</title>
     <style type="text/css">
-
         body {
-
             margin: 0;
             padding: 0;
             background-color: antiquewhite;
             font-family: "Open Sans", "Helvitica", "Arial", "sans Serif";
         }
+        .PositionTest {
+                float: left;
+                margin: 30px;
+                width: 80px;
+                height: 80px;
+            border: 10px red solid;
+            border-style: ridge dotted dashed solid;
+            }
+
         #one {
             position: relative;
-            z-index: 2;
-             /*left:50px;*/
-            margin: 5em auto;   
+            /*z-index: 2;*/
+            /*left:50px;*/
+            margin: 5em auto;
             background-color: #AF601A;
             width: 500px;
             border-radius: 1em;
             padding: 50px;
             /*float: left;*/
-           
-           
-
         }
+
         #two {
-            position: relative;;
-            z-index: 1;
-            margin:5em auto;
+            position: relative;
+            ;
+            /*z-index: 1;*/
+            margin: 5em auto;
             background-color: #117A65;
             width: 500px;
             border-radius: 1em;
             padding: 50px;
             /*float: left;*/
-           
-
         }
 
         #three {
             position: relative;
-            z-index: 3;
+            /*z-index: 3;*/
             margin: 5em auto;
-            background-color:#28B463;
+            background-color: #28B463;
             width: 500px;
             height: 400px;
             border-radius: 1em;
             padding: 50px;
             /*clear: both;*/
-            
         }
 
+         #four {
+            position: relative;
+            /*z-index: 3;*/
+            margin: 5em auto;
+            background-color:#979A9A;
+            width: 500px;
+            height: 400px;
+            border-radius: 1em;
+            padding: 50px;
+           
+        }
         .header, a {
-
             text-transform: capitalize;
             color: chartreuse;
         }
-        a:link a:visited {
-            color: rgb(41, 41, 156);
 
-            text-decoration: none;
-        }
+            a:link a:visited {
+                color: rgb(41, 41, 156);
+                text-decoration: none;
+            }
+
         @media screen and (max-width: 800px) {
             body {
                 background-color: aquamarine;
             }
-            #one ,#two,#three {
+
+            #one, #two, #three {
                 margin: 0 auto;
                 background-color: chartreuse;
                 width: auto;
                 border-radius: 0;
                 padding: 1em;
+            }
 
-            }
             .myFrame {
-                width:600px;
-                height:650px;
-                
+                width: 600px;
+                height: 650px;
             }
-          
+
+            
         }
     </style>
 
 
 </head>
 <body>
-<div id="one">
-    <h1 class="header">example domian</h1>
-    <p>
-        This<strong>domain</strong>  is established &amp;to be used for <em>illustrative</em> examples in documents. <br />you may use this domain  <hr /> in examples without prior coordination or asking for permission.
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200" />
 
-    </p>
-    <p><a href="http://www.iana.org/domains/reserved">more information...</a></p>
-    <hr />
-    <ul>
-        <li>Microsoft</li>
-        <li>Cisco</li>
-        <li>att</li>
-    </ul>
-    <hr />
-</div>
-<div id="two">
+   
+    <div id="one">
+        <h1 class="header">example domian</h1>
+        <p>
+            This
+            <strong>domain</strong> is established &amp;to be used for
+            <em>illustrative</em> examples in documents.
+            <br />you may use this domain
+            <hr /> in examples without prior coordination or asking for permission.
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200" />
 
-    <form action="" id="top">
-        <input type="text" placeholder="Write here.." name="text" />
-        <br />
-        <textarea name="textarea">My content comes here </textarea>
+        </p>
+        <p>
+            <a href="http://www.iana.org/domains/reserved">more information...</a>
+        </p>
+        <hr />
+        <ul>
+            <li>Microsoft</li>
+            <li>Cisco</li>
+            <li>att</li>
+        </ul>
+        <hr />
+    </div>
+    <div id="two">
+
+        <form action="" id="top">
+            <input type="text" placeholder="Write here.." name="text" />
+            <br />
+            <textarea name="textarea">My content comes here </textarea>
+            <hr />
+
+            <select>
+                <option>Select one</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <hr />
+
+            <input type="radio" name="options" /> Microsoft
+            <input type="radio" name="options" />Cisco
+            <hr />
+
+            <input type="checkbox" name="ok" value="1" />ok
+            <input type="checkbox" name="notok" value="2">notOk
+
+
+            <input type="submit" />
+        </form>
         <hr />
 
-        <select>
-            <option>Select one</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <hr/>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
 
-        <input type="radio" name="options" /> Microsoft
-        <input type="radio" name="options" />Cisco
-        <hr/>
+            <tr>
+                <td>Fattaneh</td>
+                <td>48</td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>Farah</td>
+                <td>49</td>
+                <td>female</td>
+            </tr>
 
-        <input type="checkbox" name="ok" value="1" />ok
-        <input type="checkbox" name="notok" value="2">notOk
+        </table>
+
+    </div>
+
+    <div id="three">
+        <iframe class="myFrame" alight="center" src="https://www.youtube.com/embed/MW_tk3kHkEg" allowfullscreen></iframe>
+
+    </div>
+
+<div id="four">
+    <div class="PositionTest" style="background-color: chartreuse" >a</div>
 
 
-        <input type="submit" />
-    </form>
-    <hr/>
+    <div class="PositionTest" style="background-color:#28b463">b</div>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-        </tr>
-
-        <tr>
-            <td>Fattaneh</td>
-            <td>48</td>
-            <td>female</td>
-        </tr>
-        <tr>
-            <td>Farah</td>
-            <td>49</td>
-            <td>female</td>
-        </tr>
-
-    </table>
-
+    <div class="PositionTest" style="background-color: aquamarine; border-radius:50px" >c</div>
 </div>
-   
-<div id="three">
-    <iframe class="myFrame" alight="center"  src="https://www.youtube.com/embed/MW_tk3kHkEg" allowfullscreen></iframe>
+    
+    
 
-</div>
-   
+
 </body>
 
 </html>

@@ -16,18 +16,50 @@
             background-color: antiquewhite;
             font-family: "Open Sans", "Helvitica", "Arial", "sans Serif";
         }
-        div {
-            margin: 5em auto;
-            background-color: rgb(131, 109, 40);
-            width: 600px;
+        #one {
+            position: relative;
+            z-index: 2;
+             /*left:50px;*/
+            margin: 5em auto;   
+            background-color: #AF601A;
+            width: 500px;
             border-radius: 1em;
             padding: 50px;
+            /*float: left;*/
+           
+           
+
+        }
+        #two {
+            position: relative;;
+            z-index: 1;
+            margin:5em auto;
+            background-color: #117A65;
+            width: 500px;
+            border-radius: 1em;
+            padding: 50px;
+            /*float: left;*/
+           
 
         }
 
-        h1, a {
+        #three {
+            position: relative;
+            z-index: 3;
+            margin: 5em auto;
+            background-color:#28B463;
+            width: 500px;
+            height: 400px;
+            border-radius: 1em;
+            padding: 50px;
+            /*clear: both;*/
+            
+        }
+
+        .header, a {
 
             text-transform: capitalize;
+            color: chartreuse;
         }
         a:link a:visited {
             color: rgb(41, 41, 156);
@@ -38,7 +70,7 @@
             body {
                 background-color: aquamarine;
             }
-            div {
+            #one ,#two,#three {
                 margin: 0 auto;
                 background-color: chartreuse;
                 width: auto;
@@ -46,80 +78,89 @@
                 padding: 1em;
 
             }
+            .myFrame {
+                width:600px;
+                height:650px;
+                
+            }
+          
         }
     </style>
 
 
 </head>
 <body>
-    <div>
-        <h1 style="color:blue">example domian</h1>
-        <p>
-            This<strong>domain</strong>  is established &amp;to be used for <em>illustrative</em> examples in documents. <br />you may use this domain  <hr /> in examples without prior coordination or asking for permission.
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200" />
+<div id="one">
+    <h1 class="header">example domian</h1>
+    <p>
+        This<strong>domain</strong>  is established &amp;to be used for <em>illustrative</em> examples in documents. <br />you may use this domain  <hr /> in examples without prior coordination or asking for permission.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200" />
 
-        </p>
-        <p><a href="http://www.iana.org/domains/reserved">more information...</a></p>
+    </p>
+    <p><a href="http://www.iana.org/domains/reserved">more information...</a></p>
+    <hr />
+    <ul>
+        <li>Microsoft</li>
+        <li>Cisco</li>
+        <li>att</li>
+    </ul>
+    <hr />
+</div>
+<div id="two">
+
+    <form action="" id="top">
+        <input type="text" placeholder="Write here.." name="text" />
+        <br />
+        <textarea name="textarea">My content comes here </textarea>
         <hr />
-        <ul>
-            <li>Microsoft</li>
-            <li>Cisco</li>
-            <li>att</li>
-        </ul>
-        <hr />
-    </div>
-    <div>
 
-        <form action="" id="top">
-            <input type="text" placeholder="Write here.." name="text" />
-            <br />
-            <textarea name="textarea">My content comes here </textarea>
-            <hr />
+        <select>
+            <option>Select one</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <hr/>
 
-            <select>
-                <option>Select one</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
+        <input type="radio" name="options" /> Microsoft
+        <input type="radio" name="options" />Cisco
+        <hr/>
+
+        <input type="checkbox" name="ok" value="1" />ok
+        <input type="checkbox" name="notok" value="2">notOk
 
 
-            <input type="radio" name="options" /> Microsoft
-            <input type="radio" name="options" />Cisco
+        <input type="submit" />
+    </form>
+    <hr/>
 
-            <input type="checkbox" name="ok" value="1" />ok
-            <input type="checkbox" name="notok" value="2">notOk
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
 
+        <tr>
+            <td>Fattaneh</td>
+            <td>48</td>
+            <td>female</td>
+        </tr>
+        <tr>
+            <td>Farah</td>
+            <td>49</td>
+            <td>female</td>
+        </tr>
 
-            <input type="submit" />
-        </form>
+    </table>
 
+</div>
+   
+<div id="three">
+    <iframe class="myFrame" alight="center"  src="https://www.youtube.com/embed/MW_tk3kHkEg" allowfullscreen></iframe>
 
-
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Gender</th>
-            </tr>
-
-            <tr>
-                <td>Fattaneh</td>
-                <td>48</td>
-                <td>female</td>
-            </tr>
-            <tr>
-                <td>Farah</td>
-                <td>49</td>
-                <td>female</td>
-            </tr>
-
-        </table>
-        <iframe alight="center" width="560" height="315" src="https://www.youtube.com/embed/MW_tk3kHkEg"  allowfullscreen></iframe>
-
-    </div>
-
+</div>
+   
 </body>
+
 </html>

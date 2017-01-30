@@ -13,11 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{43D550
 		Google_Art_Project.jpg = Google_Art_Project.jpg
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{22804D45-8A88-43AF-91BF-8D2A8E6EC2D8}"
+	ProjectSection(SolutionItems) = preProject
+		myStyle.css = myStyle.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{43D55092-8DD9-4448-A317-B0BF7235702F} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
+		{22804D45-8A88-43AF-91BF-8D2A8E6EC2D8} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
 	EndGlobalSection
 EndGlobal

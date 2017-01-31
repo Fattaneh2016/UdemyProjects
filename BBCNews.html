@@ -32,15 +32,14 @@
         }
 
         #logodiv {
-            padding-top: 5px;
+            padding: 4px 10px 6px 10px;
             float: left;
             border-right: 1px solid #990000;
-            padding-right: 10px;
         }
 
         #signInDiv {
             font-weight: bold;
-            padding: 6px 80px 8px 50px;
+            padding: 5px 80px 6px 50px;
             font-size: 0.9em;
             float: left;
             border-right: 1px solid #990000;
@@ -53,31 +52,81 @@
         #topmenuDiv {
             float: left;
         }
-        #topmenuDiv ul {
-            margin: 0;
-            padding: 0;
-        }
 
-        #topmenuDiv li {
-            list-style: none;
-            float: left;
-            font-size: 1em;
-            border-right: 1px solid #990000;
-            height: 100%;
-            padding: 10px 20px 12px 20px;
-        }
+            #topmenuDiv ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            #topmenuDiv li {
+                list-style: none;
+                float: left;
+                font-size: 1em;
+                font-weight: bold;
+                border-right: 1px solid #990000;
+                height: 100%;
+                padding: 5px 20px 4px 20px;
+            }
 
         li:hover {
-            
-            border-bottom: 5px solid #990000;
+            border-bottom: 2px solid #990000;
+            color: blueviolet;
         }
-     
+
+        #searchdiv {
+            float: left;
+            padding: 5px 0px 0px 10px;
+            color: black;
+        }
+
+            #searchdiv input {
+                height: 20px;
+                border: none;
+                font-size: 0.9em;
+                padding-left: 10px;
+                background-image: url(images/search.png);
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+        .break {
+            clear: both;
+        }
+
+        #Newsbar {
+            background-color: #8d4c4c;
+            width: 100%;
+            height: 90px;
+            list-style: none;
+            color: white;
+        }
+        #Newsbar p {
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            
+        }
+        #newsHeader {
+            font-size: 2.5em;
+            
+         }
+        #uk {
+            font-size: 0.7em;
+            padding-left: 20px;
+        }
+        #rss {
+            float: right;
+            margin-top: 5px;
+        }
+        #rss img {
+            height:14px;
+        }
     </style>
 
 </head>
 
 <body>
-    <div id="container" class="">
+    <div id="container" >
 
         <div id="topbar">
             <div class="fixedWidth">
@@ -85,12 +134,13 @@
                 <div id="logodiv">
                     <img id="logo-image" src="images/bbcLogo.png" alt="BBC">
                 </div>
-                <div id="signInDiv">
-                    <img src="images/signIn.PNG" alt="signin" />Sign In
-                </div>
+
                 <div id="topmenuDiv">
                     <ul>
-                
+
+                        <li>
+                            <img src="images/signIn.PNG" alt="signin" />Sign In
+                        </li>
                         <li>News</li>
                         <li>Sport</li>
                         <li>Weather</li>
@@ -98,78 +148,86 @@
                         <li>TV</li>
                         <li>Radio</li>
                         <li>More..</li>
-                        
+
                     </ul>
 
                 </div>
-                
+
                 <div id="searchdiv">
-                    
-                        <input type="text" placeholder="Search" />
-                        <span><input type="submit" /></span>
-                   
+
+                    <input type="text" placeholder="Search" />
+
+
                 </div>
             </div>
         </div>
 
+        <div id="Newsbar" class="break">
+            <div class="fixedWidth">
+                <p id="newsHeader" >NEWS <span id="uk">UK</span> </p>
 
-        <!--<div id="header-wrapper">
-            <h1>
-                <a rel="index" href="http://www.bbc.co.uk/news/">
-
-                </a>
-
-            </h1><span>last Updated</span>
+                <div id="rss">
+                    RSS <img src="images/rss.PNG"/>
+                </div>
+            </div>
         </div>
-             <div id="middle">
-                 <ul id="nav">
-
-
-                     <li class="first-child selected"><a href="http://www.bbc.co.uk/news/">Home</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/world/">World</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/uk/">UK</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/england/">England</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/northern_ireland/">N. Ireland</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/scotland/">Scotland</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/wales/">Wales</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/business/">Business</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/politics/">Politics</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/health/">Health</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/education/">Education</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/science_and_environment/">Sci/Environment</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/technology/">Technology</a></li>
-
-
-                     <li><a href="http://www.bbc.co.uk/news/entertainment_and_arts/">Entertainment &amp; Arts</a></li>
-                 </ul>
-             </div>-->
     </div>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--<div id="header-wrapper">
+        <h1>
+            <a rel="index" href="http://www.bbc.co.uk/news/">
+
+            </a>
+
+        </h1><span>last Updated</span>
+    </div>
+         <div id="middle">
+             <ul id="nav">
+
+
+                 <li class="first-child selected"><a href="http://www.bbc.co.uk/news/">Home</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/world/">World</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/uk/">UK</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/england/">England</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/northern_ireland/">N. Ireland</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/scotland/">Scotland</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/wales/">Wales</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/business/">Business</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/politics/">Politics</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/health/">Health</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/education/">Education</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/science_and_environment/">Sci/Environment</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/technology/">Technology</a></li>
+
+
+                 <li><a href="http://www.bbc.co.uk/news/entertainment_and_arts/">Entertainment &amp; Arts</a></li>
+             </ul>
+         </div>-->
+    <!-- Latest compiled and minified JavaScript -->
+    
 </body>
 </html>

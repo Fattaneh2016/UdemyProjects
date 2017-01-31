@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{43D550
 	ProjectSection(SolutionItems) = preProject
 		images\bbcLogo.png = images\bbcLogo.png
 		Google_Art_Project.jpg = Google_Art_Project.jpg
+		images\rss.PNG = images\rss.PNG
+		images\search.PNG = images\search.PNG
 		images\signIn.PNG = images\signIn.PNG
 	EndProjectSection
 EndProject

@@ -5,12 +5,14 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBD12427-CFA8-4776-B102-806A9CEE0A59}"
 	ProjectSection(SolutionItems) = preProject
-		css\myStyle.css = css\myStyle.css
+		BBCNews.html = BBCNews.html
+		News.html = News.html
 		Structure.html = Structure.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{43D55092-8DD9-4448-A317-B0BF7235702F}"
 	ProjectSection(SolutionItems) = preProject
+		images\bbcLogo.png = images\bbcLogo.png
 		Google_Art_Project.jpg = Google_Art_Project.jpg
 	EndProjectSection
 EndProject

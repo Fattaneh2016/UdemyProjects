@@ -45,30 +45,30 @@
             border-right: 1px solid #990000;
         }
 
-            #signInDiv img {
-                position: relative;
-            }
+        #signInDiv img {
+            position: relative;
+        }
 
         #topmenuDiv {
             float: left;
         }
 
-            #topmenuDiv ul {
-                margin: 0;
-                padding: 0;
-            }
+        #topmenuDiv ul {
+            margin: 0;
+            padding: 0;
+        }
 
-            #topmenuDiv li {
-                list-style: none;
-                float: left;
-                font-size: 1em;
-                font-weight: bold;
-                border-right: 1px solid #990000;
-                height: 100%;
-                padding: 5px 20px 4px 20px;
-            }
+        #topmenuDiv li {
+            list-style: none;
+            float: left;
+            font-size: 1em;
+            font-weight: bold;
+            border-right: 1px solid #990000;
+            height: 100%;
+            padding: 5px 20px 4px 20px;
+        }
 
-        li:hover {
+        #topmenuDiv  li:hover {
             border-bottom: 2px solid #990000;
             color: blueviolet;
         }
@@ -79,15 +79,15 @@
             color: black;
         }
 
-            #searchdiv input {
-                height: 20px;
-                border: none;
-                font-size: 0.9em;
-                padding-left: 10px;
-                background-image: url(images/search.png);
-                background-repeat: no-repeat;
-                background-position: right;
-            }
+        #searchdiv input {
+            height: 20px;
+            border: none;
+            font-size: 0.9em;
+            padding-left: 10px;
+            background-image: url(images/search.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
 
         .break {
             clear: both;
@@ -96,43 +96,112 @@
         #Newsbar {
             background-color: #8d4c4c;
             width: 100%;
-            height: 90px;
+            height: 100px;
             list-style: none;
             color: white;
         }
+
         #Newsbar p {
             margin: 0;
             padding: 0;
             padding-top: 10px;
-            
         }
+
         #newsHeader {
             font-size: 2.5em;
-            
-         }
+        }
+
         #uk {
             font-size: 0.7em;
             padding-left: 20px;
         }
+
         #rss {
+            position: relative;
             float: right;
-            margin-top: 5px;
+            margin-top: 20px;
         }
+
         #rss img {
-            height:14px;
+            height: 14px;
+        }
+
+        #topicMenu {
+                
+               
+        }
+        #topicMenu ul {
+            background-color: #3E0C0D;
+            padding: 5px 0 0 5px;
+            margin: 0;
+            height: 40px;
+        }
+        #topicMenu li {
+            list-style: none;
+            font-size: 1.2em;
+            padding: 0 6px 0 6px;
+            float: left;
+            border-right: 1px solid #990000;
+           
+        }
+        .selected {
+            background-color: #EDEDED;
+            color: #000000;
+        }
+        #content {
+
+            width: 100%;
+            color: #3e0c0d;
+            font-size: 1.1em;
+            padding-top: 10px;
+        }
+        
+    
+
+        .date {
+
+            font-weight: bold;
+        }
+        h1 {
+            color: #264fa8;
+        }
+        .headlineImage {
+            float: left;
+        }
+        #newsItem {
+            position: relative;
+            left: 10px;
+            float: left;
+            top: -8px;
+            width: 280px;
+            font-size: 1.1em;
+        }
+        #newsItem a {
+            color:#6b90e1;
+        }
+        .video {
+            background-image: url(images/play.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 30px;
+        }
+        .links {
+            line-height: 1.4em;
         }
     </style>
 
 </head>
 
 <body>
-    <div id="container" >
+    <div id="container">
 
         <div id="topbar">
             <div class="fixedWidth">
 
                 <div id="logodiv">
-                    <img id="logo-image" src="images/bbcLogo.png" alt="BBC">
+
+                    <a rel="index" href="http://www.bbc.co.uk/news/"> <img id="logo-image" src="images/bbcLogo.png" alt="BBC"> </a>
+
                 </div>
 
                 <div id="topmenuDiv">
@@ -164,70 +233,119 @@
 
         <div id="Newsbar" class="break">
             <div class="fixedWidth">
-                <p id="newsHeader" >NEWS <span id="uk">UK</span> </p>
-
+                <div class="break"></div>
                 <div id="rss">
-                    RSS <img src="images/rss.PNG"/>
+                    RSS
+                    <img src="images/rss.PNG" />
+                </div>
+
+                <p id="newsHeader">
+                    NEWS
+                    <span id="uk">UK</span>
+                </p>
+
+
+
+
+                <div id="topicMenu">
+                    <ul>
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/">Home</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/world/">World</a>
+                        </li>
+
+
+                        <li class="selected">
+                            <a href="http://www.bbc.co.uk/news/uk/">UK</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/england/">England</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/northern_ireland/">N. Ireland</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/scotland/">Scotland</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/wales/">Wales</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/business/">Business</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/politics/">Politics</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/health/">Health</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/education/">Education</a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.bbc.co.uk/news/science_and_environment/">Sci/Environment</a>
+                        </li>
+
+
+                        <li style="border-right: none">
+                            <a href="http://www.bbc.co.uk/news/technology/">Technology</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="content">
+
+            <div class="fixedWidth">
+                <p><span class="date">2 April 2014</span> Last updated at 14:13</p>
+                <h1>Pollution to spread across England</h1>
+                <img class="headlineImage" src="images/image1.jpg" />
+                <div id="newsItem">
+                    <p>Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels.</p>
+
+                    <p class="links">
+                        <a class="video" href="">Why are pollution levels so high? </a>
+                        <a class="video" href="">Saharan dust visible on cars</a>
+                        <a class="video" href="">How Saharan dust reached the UK Watch What will pollution do to us?</a>
+                        <a href="">What will pollution do to us?</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--<div id="header-wrapper">
-        <h1>
-            <a rel="index" href="http://www.bbc.co.uk/news/">
-
-            </a>
-
-        </h1><span>last Updated</span>
-    </div>
-         <div id="middle">
-             <ul id="nav">
 
 
-                 <li class="first-child selected"><a href="http://www.bbc.co.uk/news/">Home</a></li>
 
 
-                 <li><a href="http://www.bbc.co.uk/news/world/">World</a></li>
 
 
-                 <li><a href="http://www.bbc.co.uk/news/uk/">UK</a></li>
 
-
-                 <li><a href="http://www.bbc.co.uk/news/england/">England</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/northern_ireland/">N. Ireland</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/scotland/">Scotland</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/wales/">Wales</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/business/">Business</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/politics/">Politics</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/health/">Health</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/education/">Education</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/science_and_environment/">Sci/Environment</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/technology/">Technology</a></li>
-
-
-                 <li><a href="http://www.bbc.co.uk/news/entertainment_and_arts/">Entertainment &amp; Arts</a></li>
-             </ul>
-         </div>-->
-    <!-- Latest compiled and minified JavaScript -->
-    
 </body>
 </html>

@@ -117,7 +117,6 @@
             }
            
             
-
         }
     </style>
     
@@ -210,14 +209,20 @@
 
         <div class="PositionTest" style="background-color:#28b463">b</div>
 
-        <div class="PositionTest" style="background-color: aquamarine; border-radius:50px">c</div>
+        <div  id="circle" class="PositionTest" style="background-color: aquamarine; border-radius:50px">c</div>
     </div>
+    
 
-    <script>
+<script>
         document.getElementById("myButton").onclick = function () {
             alert(document.getElementById("myButton").innerHTML);
 
-        }
+       
+
+    document.getElementById("circle").style.display="none";
+        
+        
+    }
     </script>
 
 

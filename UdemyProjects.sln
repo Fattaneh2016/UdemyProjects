@@ -18,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{43D550
 		images\image1.jpg = images\image1.jpg
 		images\leftArrowPNG.PNG = images\leftArrowPNG.PNG
 		images\leftPic.PNG = images\leftPic.PNG
+		images\live.PNG = images\live.PNG
 		images\play.PNG = images\play.PNG
 		images\RightArrow.PNG = images\RightArrow.PNG
 		images\RightPic.PNG = images\RightPic.PNG

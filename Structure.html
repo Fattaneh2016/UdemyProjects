@@ -18,14 +18,14 @@
         }
 
         #myul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.myli {
-    display: inline;
-}
+        .myli {
+            display: inline;
+        }
 
         .PositionTest {
             float: left;
@@ -93,10 +93,10 @@
             color: chartreuse;
         }
 
-            a:link a:visited {
-                color: rgb(41, 41, 156);
-                text-decoration: none;
-            }
+        a:link a:visited {
+            color: rgb(41, 41, 156);
+            text-decoration: none;
+        }
 
         @media screen and (max-width: 800px) {
             body {
@@ -120,6 +120,7 @@
 
         }
     </style>
+    
 </head>
 <body>
 
@@ -127,12 +128,14 @@
     <div id="one">
         <h1 class="header">example domian</h1>
         <p>
+            <button id="myButton">this is my button</button>
+
             This
             <strong>domain</strong> is established &amp;to be used for
             <em>illustrative</em> examples in documents.
-            <br />you may use this domain
-            <hr /> in examples without prior coordination or asking for permission.
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200" />
+            <br/>you may use this domain
+            <hr/> in examples without prior coordination or asking for permission.
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg/350px-Charles_Bird_King_-_Young_Omahaw%2C_War_Eagle%2C_Little_Missouri%2C_and_Pawnees_-_Google_Art_Project.jpg" alt="my pic" width="200" height="200"/>
 
         </p>
         <p>
@@ -169,8 +172,8 @@
             <input type="checkbox" name="ok" value="1" />ok
             <input type="checkbox" name="notok" value="2">notOk
 
-
-            <input type="submit" />
+            
+            <input id="submit" type="submit" />
         </form>
         <hr />
 
@@ -210,7 +213,12 @@
         <div class="PositionTest" style="background-color: aquamarine; border-radius:50px">c</div>
     </div>
 
+    <script>
+        document.getElementById("myButton").onclick = function () {
+            alert(document.getElementById("myButton").innerHTML);
 
+        }
+    </script>
 
 
 </body>

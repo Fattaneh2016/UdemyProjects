@@ -16,24 +16,47 @@
 </head>
 
 <body>
-    <div id="calcRandom">
-        <p>Click the button to display a random number between 1 and 5.</p>
-        <input id="random" type="button" value="Random" />
-
-        <p id="show"></p>
-    </div>
+<div id="calcRandom">
+   
+    <p id="mytext"> Click the button to display a random number between 1 and <span id="num"></span>
+    </p>
+    <input id="random" type="button" value="Random"/>
+    <input type="text" id="answer"/>
+    <span id="show"></span>
+</div>
 <script>
+
+
+    //var mystr = "";
+    //var myarray = ['Click', ' the button to display', ' a random number between 1 and '];
+
+    //for (var i = 0; i < myarray.length; i++) {
+    //    mystr += myarray[i];
+    //}
+
+    //document.getElementById("mytext").innerHTML = mystr;
+
+
 
     var myRandom = document.getElementById("random");
     var myShow = document.getElementById("show");
+    
+
+
+
+
+    
     myRandom.onclick = function() {
         var x = Math.random();
-
-        x = 5 * x;
+        var myAnswer = document.getElementById("answer").value;
+        document.getElementById("num").innerHTML = myAnswer; 
+        x = myAnswer * x;
         x = Math.floor(x);
         myShow.innerHTML = x;
+        
     }
 
+   
 </script>
 
 </body>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        #calcRandom {
+            border: solid 3px green;
+            width: 600px;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="calcRandom">
+        <p>Click the button to display a random number between 1 and 5.</p>
+        <input id="random" type="button" value="Random" />
+
+        <p id="show"></p>
+    </div>
+<script>
+
+    var myRandom = document.getElementById("random");
+    var myShow = document.getElementById("show");
+    myRandom.onclick = function() {
+        var x = Math.random();
+
+        x = 5 * x;
+        x = Math.floor(x);
+        myShow.innerHTML = x;
+    }
+
+</script>
+
+</body>
+</html>

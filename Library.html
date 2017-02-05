@@ -11,6 +11,11 @@
             width: 600px;
             line-height: 50px;
         }
+        #box {
+            height: 200px;
+             width:200px;
+            background-color: red;
+        }
     </style>
 
 </head>
@@ -24,6 +29,12 @@
     <input type="text" id="answer"/>
     <span id="show"></span>
 </div>
+
+    <div id="box">
+
+    </div>
+
+
 <script>
 
 
@@ -38,25 +49,35 @@
 
 
 
-    var myRandom = document.getElementById("random");
-    var myShow = document.getElementById("show");
-    
+    function random() {
+        var myRandom = document.getElementById("random");
+        var myShow = document.getElementById("show");
 
+        myRandom.onclick = function () {
+            var x = Math.random();
+            var myNumber= document.getElementById("answer").value;
+            document.getElementById("num").innerHTML = myNumber;
+            x = myNumber * x;
+            x = Math.floor(x);
+            myShow.innerHTML = x;
 
-
-
-    
-    myRandom.onclick = function() {
-        var x = Math.random();
-        var myAnswer = document.getElementById("answer").value;
-        document.getElementById("num").innerHTML = myAnswer; 
-        x = myAnswer * x;
-        x = Math.floor(x);
-        myShow.innerHTML = x;
-        
+        }
     }
 
-   
+    random();
+
+    shape = document.getElementById("box");
+    function disappear(shape) {
+        shape.style.display = "none";
+
+    }
+
+
+    shape.onclick = function() {
+        disappear(shape);
+    };
+     
+    
 </script>
 
 </body>

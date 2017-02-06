@@ -15,6 +15,7 @@
             height: 200px;
              width:200px;
             background-color: red;
+            display:none;
         }
     </style>
 
@@ -31,7 +32,9 @@
 </div>
 
     <div id="box">
-
+        <p>
+            setTimeout , box disapear after 3000 ms
+        </p>
     </div>
 
 
@@ -72,6 +75,16 @@
 
     }
 
+    function appear(shape) {
+        shape.style.display = "block";
+
+    }
+
+    setTimeout(function() {
+
+        appear(shape);
+        },
+        2000);
 
     shape.onclick = function() {
         disappear(shape);

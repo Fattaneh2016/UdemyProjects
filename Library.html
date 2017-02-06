@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title></title>
 
     <style>
@@ -13,9 +13,15 @@
         }
         #box {
             height: 200px;
-             width:200px;
+            width: 200px;
             background-color: red;
-            display:none;
+            display: none;
+        }
+        #circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background-color: green;
         }
     </style>
 
@@ -36,7 +42,9 @@
             setTimeout , box disapear after 3000 ms
         </p>
     </div>
-
+<div id="circle">
+    
+</div>
 
 <script>
 
@@ -50,6 +58,11 @@
 
     //document.getElementById("mytext").innerHTML = mystr;
 
+    //make sure the jquery installed
+    if (typeof jQuery !="undefined") {
+
+        //alert("xvmv");
+    }
 
 
     function random() {
@@ -89,7 +102,10 @@
     shape.onclick = function() {
         disappear(shape);
     };
-     
+
+    $("#circle").click(function() {
+        alert('circle is clicked');
+    });
     
 </script>
 

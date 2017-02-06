@@ -28,7 +28,24 @@
 <body>
     <div id="square"></div>
 
-    <div id="target"></div>
+    <div id="target">  </div>
+    <div id="accordion">
+        <h1>title 1</h1>
+        <div>
+            dvs sv sgddgdgdgdg
+        </div>
+        <h1>title 2</h1>
+        <div>
+            dvs sv sgddgdgdgdg
+        </div>
+    </div>
+    <div>
+        <ul id="sort">
+            <li>pizza</li>
+            <li>cake</li>
+        </ul>
+    </div>
+
     <script>
         $("#square").draggable();
         $("#target").droppable({
@@ -39,6 +56,9 @@
             }
 
         });
+        $("#accordion").accordion();
+        $("#sort").sortable();
+        $("#target").resizable();
     </script>
 
 

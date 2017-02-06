@@ -43,8 +43,9 @@
         </p>
     </div>
 <div id="circle">
-    
+    <p id="myP">hello there</p>
 </div>
+<!--<iframe src="http://www.cnn.com/"></iframe>-->
 
 <script>
 
@@ -104,9 +105,18 @@
     };
 
     $("#circle").click(function() {
-        alert('circle is clicked');
+        $("#myP").html("hello Fattaneh");
+        $("iframe").Attr("src", "https://www.google.com/");
+        $("#circle").CSS("width", "300px");
     });
-    
+
+    $("div").hover(function() {
+        $(this).fadeOut();
+        $(this).animate({
+            width: "200px",
+            height:"200px"
+        }, 1500);
+    });
 </script>
 
 </body>

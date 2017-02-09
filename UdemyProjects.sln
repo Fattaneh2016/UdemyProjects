@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Ajax.html = Ajax.html
 		BBCNews.html = BBCNews.html
 		Bootstrap.html = Bootstrap.html
+		codePlayer.html = codePlayer.html
 		FormValidation.html = FormValidation.html
 		JQueryUI.html = JQueryUI.html
 		LandingPage.html = LandingPage.html

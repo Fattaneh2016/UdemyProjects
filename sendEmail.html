@@ -6,14 +6,16 @@
     <title></title>
 </head>
 <body>
-<?php
+    <?php
     $emailTo="fattaneh@fattanehameri.com";
     $subject="hello";
     $body="I am send email";
-    $header="fattaneh";
-    
-    mail($emailTo ,$subject ,$body ,$header);
-
-?>
+    $header="from:fatameri@hotmail.com";
+    if( mail($emailTo ,$subject ,$body ,$header)){
+    echo '<p>Hello World</p>'
+    } else {
+    echo "notsuccess"
+    };
+    ?>
 </body>
 </html>

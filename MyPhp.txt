@@ -1,0 +1,50 @@
+<?php
+
+
+$array=array("a","b","c");
+
+print_r($array);
+	
+	echo $array[1];
+
+echo "<br /><b />";
+
+$arrayone[0]="fati";
+$arrayone[1]="ameri";
+
+print_r( $arrayone);
+
+echo "<br /><b />";
+
+$thirdArray=array(
+	"france"=>"french",
+	"usa"=> "english"
+);
+
+	print_r($thirdArray);
+echo "<br /
+><b />";
+$anotherArray[]="ameri";
+
+print_r($anotherArray);
+
+unset($anotherArray["farah"]);
+
+print_r($anotherArray);
+
+echo "<br /><br />";
+
+$number=1;
+
+if ($number==1){
+	echo "true";
+}else{
+  echo "false";	
+}
+	
+	
+?>
+
+
+
+

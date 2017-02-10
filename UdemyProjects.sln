@@ -57,6 +57,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{5457F06C-1594-
 		js\npm.js = js\npm.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "php", "php", "{6916DDB2-9B98-4C69-8E6B-BF72666F4CF2}"
+	ProjectSection(SolutionItems) = preProject
+		MyPhp.txt = MyPhp.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +70,6 @@ Global
 		{43D55092-8DD9-4448-A317-B0BF7235702F} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
 		{4F0E0D18-E5B7-46DB-A998-AD883B58E250} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
 		{5457F06C-1594-4409-AE83-0D5D9A5E8F30} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
+		{6916DDB2-9B98-4C69-8E6B-BF72666F4CF2} = {BBD12427-CFA8-4776-B102-806A9CEE0A59}
 	EndGlobalSection
 EndGlobal
